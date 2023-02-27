@@ -1,2 +1,7 @@
+from package.power_consuption import PowerConsumption
+
 class HeavyConsumers(PowerConsumption):
-    pass
+    _name = ''
+        #constructor
+    def __init__(self, appliance_name):
+        self._name = appliance_name
