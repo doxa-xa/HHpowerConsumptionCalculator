@@ -1,0 +1,2 @@
+class HeavyConsumers(PowerConsumption):
+    pass
