@@ -1,4 +1,4 @@
-from package.power_consuption import PowerConsumption
+from household_calculator.power_consuption import PowerConsumption
 #used for the air conditioning: heeters, fans, AC units 
 class AirConditioning(PowerConsumption):
 

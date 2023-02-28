@@ -1,4 +1,4 @@
-from package.power_consuption import PowerConsumption
+from household_calculator.power_consuption import PowerConsumption
 # used for frequently used household electronics like: TV, soud systems, PC, phones, tablets, etc.
 # usually low voltage DC chargables
 
@@ -21,7 +21,7 @@ class Media(PowerConsumption):
         self._charging_time = time
 
     # returns a dictionary of the household appliance  
-    def get_bill(self, power, work_time):
+    def get_appliance(self, power, work_time):
         chargers_consumption = round((self._voltage * self._current * self._cosfi)/1000 ,2)
         power_consumption = round(power*work_time, 2)
         return {

@@ -1,12 +1,20 @@
 #used for grouping the household power consumers in rooms 
-
+from household_calculator import exports
 class Household:
     # static properties:
     _household = {}
 
+    #returns the household dictionary with the current room lists
+    def get_household(self):
+        return self._household
+
     # creates a household room for power consumers data dictionaries
     def set_new_room(self,room_name):
         self._household[room_name] =[]
+
+    #retuns current room list of power consumers
+    def get_room(self,room_name):
+        return self._household[room_name]
 
     #removes a household room with the power consumers in it
     def remove_room(self,room_name):

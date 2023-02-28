@@ -20,9 +20,11 @@ class PowerConsumption:
         return self._pricePerkWh
     
     # returns a dictionary of the household appliance  
-    def get_bill(self, power, work_time):
+    def get_appliance(self, power, work_time):
         power_consumption = power*work_time
-        return {'appliance': self._name, 
+        return {
+                'appliance': self._name, 
                 'power consumption': power_consumption,
-                'amount': power_consumption*self._pricePerkWh}
+                'amount': power_consumption*self._pricePerkWh
+                }
 

@@ -1,4 +1,4 @@
-from package.power_consuption import PowerConsumption
+from household_calculator.power_consuption import PowerConsumption
 
 # here you can list other household appliances 
 # i plan to list anything which is rarely or periodically used in
