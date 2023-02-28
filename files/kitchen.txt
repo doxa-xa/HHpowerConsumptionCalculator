@@ -1,0 +1,6 @@
+dict_keys(['type', 'appliance', 'power consumption', 'amount'])
+dict_values(['Heavy power consumers', 'fridge', 48, 10.08])
+dict_values(['Heavy power consumers', 'oven', 5.0, 1.05])
+dict_values(['Heavy power consumers', 'stove', 6, 1.26])
+dict_values(['Heavy power consumers', 'boiler', 6, 1.26])
+dict_values(['Heavy power consumers', 'dishwasher', 6.0, 1.26])

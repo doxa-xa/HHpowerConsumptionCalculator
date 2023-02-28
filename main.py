@@ -43,6 +43,7 @@ kitchen_consumption = home.get_room('kitchen')
 
 Save.to_csv(kitchen_consumption,'Kitchen.csv')
 Save.to_json(kitchen_consumption,'Kitchen.json')
+Save.to_txt(kitchen_consumption,'kitchen.txt')
 print(home.get_room_bill('kitchen',30))
 print(home.get_room_power_consumption('kitchen',30))
 
