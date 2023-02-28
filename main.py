@@ -38,7 +38,8 @@ home.add_to_room('kitchen',stove_bill)
 home.add_to_room('kitchen',boiler_bill)
 home.add_to_room('kitchen',dishwasher_bill)
 
-print(home.get_room_bill('kitchen'))
+print(home.get_room_bill('kitchen',30))
+print(home.get_room_power_consumption('kitchen',30))
 
 
 

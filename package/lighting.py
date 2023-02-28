@@ -1,12 +1,14 @@
 from package.power_consuption import PowerConsumption
+# used for household lighting enter the number of light sources (bulbs) in a room or a household
 
 class Lighting(PowerConsumption):
     _category = 'lighting'
-        #constructor
+
+    #constructor
     def __init__(self, appliance_name, bulbs):
         self._name = appliance_name
         self._bulbs = bulbs
-        
+    # returns a dictionary of the household appliance   
     def get_bill(self,power,work_time):
         power_consumption = power * work_time * self._bulbs
         return {
